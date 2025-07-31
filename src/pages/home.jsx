@@ -52,10 +52,10 @@ function Home() {
     <div style={backgroundStyle}>
       <div style={backgroundImageStyle}></div>
       <div style={contentStyle}>
-        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '0.5rem', color: '#b76e79' }}>THE SENT STUDIO</h1>
+        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '0.5rem', color: '#b76e79' }}>THE SCENT STUDIO</h1>
         <h2 style={{ fontSize: '1.5rem', fontStyle: 'italic', marginBottom: '1.5rem' }}>Experience the Essence of Elegance</h2>
         <p style={{ fontSize: '1.125rem' }}>
-          Welcome to THE SENT STUDIO, your premier destination for exquisite perfumes crafted to captivate your senses and elevate your presence. Discover our unique blends that embody sophistication, passion, and timeless beauty.
+          Welcome to THE SCENT STUDIO, your premier destination for exquisite perfumes crafted to captivate your senses and elevate your presence. Discover our unique blends that embody sophistication, passion, and timeless beauty.
         </p>
       </div>
       <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '2rem' }}>
