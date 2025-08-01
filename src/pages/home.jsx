@@ -93,7 +93,7 @@ function Home() {
         <p
           style={{
             marginBottom: '8px',
-            fontStyle: 'italic',
+            fontStyle: 'normal',
             maxWidth: '600px',
             color: 'pink',
             fontWeight: '600',
