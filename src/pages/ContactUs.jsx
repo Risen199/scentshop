@@ -70,6 +70,8 @@ function ContactUs() {
         <p>+27 61 449 4985</p>
         <h2 style={{ color: '#b8860b', marginTop: '1.5rem' }}>Working Hours</h2>
         <p>MON-FRI : 08:00 - 16:00</p>
+        <h2 style={{ color: '#b8860b', marginTop: '1.5rem' }}>Email</h2>
+        <p>tommybigsu@gmail.com</p>
       </div>
       <form
         onSubmit={handleSubmit}

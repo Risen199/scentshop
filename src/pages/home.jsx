@@ -54,43 +54,91 @@ function Home() {
       <div style={backgroundImageStyle}></div>
 
       <div style={contentStyle}>
-        <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '0.5rem', color: '#b76e79' }}>
+        <h1
+          style={{
+            fontSize: '3rem',
+            fontWeight: 'bold',
+            marginBottom: '0.5rem',
+            color: '#b76e79',
+          }}
+        >
           THE SCENT STUDIO
         </h1>
-        <h2 style={{ fontSize: '1.5rem', fontStyle: 'italic', marginBottom: '1.5rem' }}>
+        <h2
+          style={{
+            fontSize: '1.5rem',
+            fontStyle: 'italic',
+            marginBottom: '1.5rem',
+          }}
+        >
           Experience the Essence of Elegance
         </h2>
         <p style={{ fontSize: '1.125rem' }}>
-          Welcome to THE SCENT STUDIO, your premier destination for exquisite perfumes crafted to captivate your senses
-          and elevate your presence. Discover our unique blends that embody sophistication, passion, and timeless beauty.
+          Welcome to THE SCENT STUDIO, your premier destination for exquisite
+          perfumes crafted to captivate your senses and elevate your presence.
+          Discover our unique blends that embody sophistication, passion, and
+          timeless beauty.
         </p>
       </div>
 
-      <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', marginTop: '2rem', zIndex: 1 }}>
-        <p style={{
-          marginBottom: '8px',
-          fontStyle: 'italic',
-          maxWidth: '600px',
-          color: 'pink',
-          fontWeight: '600',
-          fontSize: '1.25rem',
-          textAlign: 'center',
-          fontFamily: 'cursive'
-        }}>
-          Discover our exquisite collection of perfumes, each crafted to captivate your senses and elevate your presence.
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          marginTop: '2rem',
+          zIndex: 1,
+        }}
+      >
+        <p
+          style={{
+            marginBottom: '8px',
+            fontStyle: 'italic',
+            maxWidth: '600px',
+            color: 'pink',
+            fontWeight: '600',
+            fontSize: '1.25rem',
+            textAlign: 'center',
+            fontFamily: 'cursive',
+          }}
+        >
+          Discover our exquisite collection of perfumes, each crafted to
+          captivate your senses and elevate your presence.
         </p>
         <Link
           to="/fragrances"
-          style={{ ...navBoxStyle, marginBottom: '40px', width: '150px', fontSize: '1.2rem', textAlign: 'center' }}
+          style={{
+            ...navBoxStyle,
+            marginBottom: '40px',
+            width: '150px',
+            fontSize: '1.2rem',
+            textAlign: 'center',
+          }}
         >
           Fragrances
         </Link>
       </div>
 
-      <div style={{ position: 'fixed', bottom: '20px', width: '100%', display: 'flex', justifyContent: 'center', zIndex: 2 }}>
+      {/* Fixed Contact Button at Bottom */}
+      <div
+        className="fixed-contact-button"
+        style={{
+          left: 0,
+          right: 0,
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          zIndex: 1000,
+        }}
+      >
         <Link
           to="/contact"
-          style={{ ...navBoxStyle, width: '195px', fontSize: '1.56rem', textAlign: 'center', marginLeft: '-4%' }}
+          style={{
+            ...navBoxStyle,
+            width: '195px',
+            fontSize: '1.56rem',
+            textAlign: 'center',
+          }}
         >
           Contact Us
         </Link>
@@ -100,3 +148,4 @@ function Home() {
 }
 
 export default Home;
+

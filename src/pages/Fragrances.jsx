@@ -28,6 +28,12 @@ const imagesContainerStyle = {
   padding: '0 1rem',
 };
 
+// Mobile specific style for images container to show 2 columns
+const mobileImagesContainerStyle = {
+  ...imagesContainerStyle,
+  gridTemplateColumns: 'repeat(2, 1fr)',
+};
+
 const imageStyle = {
   width: '100%',
   height: '300px',
@@ -95,24 +101,23 @@ function Fragrances() {
 
       {/* Price Banner */}
       <div style={{
-        fontSize: '2.5rem',
-        color: 'red',
-        fontStyle: 'italic',
-        margin: '2rem 0 1rem',
+        fontSize: '1.8rem',
+        color: '#b8860b',
+        fontWeight: 'bold',
+        margin: '1.5rem 0 1rem',
         backgroundColor: 'rgba(0, 0, 0, 0.7)',
         width: '100%',
-        padding: '1rem 2rem',
+        padding: '0.8rem 2rem',
         userSelect: 'none',
         backdropFilter: 'blur(8px)',
         WebkitBackdropFilter: 'blur(8px)',
         textAlign: 'center',
       }}>
-        <p style={{ margin: 0 }}>As little as</p>
-        <p style={{ margin: 0 }}>R95</p>
+        <p style={{ margin: 0 }}>All fragrances at just R95!</p>
       </div>
 
       {/* Images */}
-      <div style={imagesContainerStyle}>
+      <div style={window.innerWidth <= 768 ? mobileImagesContainerStyle : imagesContainerStyle}>
         {images.map((img) => (
           <img
             key={img}
